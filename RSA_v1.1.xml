@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>RSA</h:title>
+    <model>
+      <itext>
+        <translation lang="English">
+          <text id="/RSA_v1.1/msmt_id:label">
+            <value>Enter integer for measurement ID (optional):</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class/1:label">
+            <value>RSA Class I</value>
+          </text>
+          <text id="/RSA_v1.1/image_mon_loc:label">
+            <value>Take picture of monitoring location:</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class/2:label">
+            <value>RSA Class II</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class/5:label">
+            <value>RSA Class V</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class/4:label">
+            <value>RSA Class IV</value>
+          </text>
+          <text id="/RSA_v1.1/comments:label">
+            <value>Enter measurement comments (optional):</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_front_image:label">
+            <value>Take picture of RSA form front:</value>
+          </text>
+          <text id="/RSA_v1.1/wq_temp_c:label">
+            <value>Enter water temperature in degrees C (e.g. 26.7):</value>
+          </text>
+          <text id="/RSA_v1.1/image_mon_loc2:label">
+            <value>Take secondary picture of monitoring location (optional):</value>
+          </text>
+          <text id="/RSA_v1.1/geopoint:label">
+            <value>Record location of measurement(s):</value>
+          </text>
+          <text id="/RSA_v1.1/wq_ec_ppm:label">
+            <value>Enter water electrical conductivity (EC) in ppm (e.g. 26.7):</value>
+          </text>
+          <text id="/RSA_v1.1/wq_do_ppm:label">
+            <value>Enter water dissolved oxygen (DO) in ppm (e.g. 5.9):</value>
+          </text>
+          <text id="/RSA_v1.1/msmt_datetime:label">
+            <value>Enter date and time of measurement:</value>
+          </text>
+          <text id="/RSA_v1.1/wq_image:label">
+            <value>Take picture of water quality measurement:</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class/3:label">
+            <value>RSA Class III</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_class:label">
+            <value>Select the Rapid Stream Assessment (RSA) class:</value>
+          </text>
+          <text id="/RSA_v1.1/rsa_back_image:label">
+            <value>Take picture of RSA form back:</value>
+          </text>
+          <text id="/RSA_v1.1/wq_ph:label">
+            <value>Enter water pH (e.g. 7.5):</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <RSA_v1.1 id="rsa_v1.1">
+          <msmt_datetime/>
+          <msmt_id/>
+          <geopoint/>
+          <wq_temp_c/>
+          <wq_ph/>
+          <wq_ec_ppm/>
+          <wq_do_ppm/>
+          <wq_image/>
+          <rsa_class/>
+          <rsa_front_image/>
+          <rsa_back_image/>
+          <image_mon_loc/>
+          <image_mon_loc2/>
+          <comments/>
+          <start/>
+          <end/>
+          <today/>
+          <deviceid/>
+          <simserial/>
+          <phonenumber/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </RSA_v1.1>
+      </instance>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/RSA_v1.1/msmt_datetime" required="true()" type="dateTime"/>
+      <bind constraint=". &gt;= 0" nodeset="/RSA_v1.1/msmt_id" type="int"/>
+      <bind nodeset="/RSA_v1.1/geopoint" required="true()" type="geopoint"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/RSA_v1.1/wq_temp_c" type="decimal"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/RSA_v1.1/wq_ph" type="decimal"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/RSA_v1.1/wq_ec_ppm" type="decimal"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/RSA_v1.1/wq_do_ppm" type="decimal"/>
+      <bind nodeset="/RSA_v1.1/wq_image" type="binary"/>
+      <bind nodeset="/RSA_v1.1/rsa_class" required="true()" type="select1"/>
+      <bind nodeset="/RSA_v1.1/rsa_front_image" required="true()" type="binary"/>
+      <bind nodeset="/RSA_v1.1/rsa_back_image" required="true()" type="binary"/>
+      <bind nodeset="/RSA_v1.1/image_mon_loc" required="true()" type="binary"/>
+      <bind nodeset="/RSA_v1.1/image_mon_loc2" type="binary"/>
+      <bind nodeset="/RSA_v1.1/comments" type="string"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/RSA_v1.1/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/RSA_v1.1/end" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/RSA_v1.1/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/RSA_v1.1/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/RSA_v1.1/simserial" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/RSA_v1.1/phonenumber" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/RSA_v1.1/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/RSA_v1.1/msmt_datetime">
+      <label ref="jr:itext('/RSA_v1.1/msmt_datetime:label')"/>
+    </input>
+    <input ref="/RSA_v1.1/msmt_id">
+      <label ref="jr:itext('/RSA_v1.1/msmt_id:label')"/>
+      <hint>The measurement ID can be used to link one survey to another.</hint>
+    </input>
+    <input ref="/RSA_v1.1/geopoint">
+      <label ref="jr:itext('/RSA_v1.1/geopoint:label')"/>
+    </input>
+    <input ref="/RSA_v1.1/wq_temp_c">
+      <label ref="jr:itext('/RSA_v1.1/wq_temp_c:label')"/>
+    </input>
+    <input ref="/RSA_v1.1/wq_ph">
+      <label ref="jr:itext('/RSA_v1.1/wq_ph:label')"/>
+    </input>
+    <input ref="/RSA_v1.1/wq_ec_ppm">
+      <label ref="jr:itext('/RSA_v1.1/wq_ec_ppm:label')"/>
+    </input>
+    <input ref="/RSA_v1.1/wq_do_ppm">
+      <label ref="jr:itext('/RSA_v1.1/wq_do_ppm:label')"/>
+    </input>
+    <upload mediatype="image/*" ref="/RSA_v1.1/wq_image">
+      <label ref="jr:itext('/RSA_v1.1/wq_image:label')"/>
+    </upload>
+    <select1 ref="/RSA_v1.1/rsa_class">
+      <label ref="jr:itext('/RSA_v1.1/rsa_class:label')"/>
+      <item>
+        <label ref="jr:itext('/RSA_v1.1/rsa_class/1:label')"/>
+        <value>1</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/RSA_v1.1/rsa_class/2:label')"/>
+        <value>2</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/RSA_v1.1/rsa_class/3:label')"/>
+        <value>3</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/RSA_v1.1/rsa_class/4:label')"/>
+        <value>4</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/RSA_v1.1/rsa_class/5:label')"/>
+        <value>5</value>
+      </item>
+    </select1>
+    <upload mediatype="image/*" ref="/RSA_v1.1/rsa_front_image">
+      <label ref="jr:itext('/RSA_v1.1/rsa_front_image:label')"/>
+    </upload>
+    <upload mediatype="image/*" ref="/RSA_v1.1/rsa_back_image">
+      <label ref="jr:itext('/RSA_v1.1/rsa_back_image:label')"/>
+    </upload>
+    <upload mediatype="image/*" ref="/RSA_v1.1/image_mon_loc">
+      <label ref="jr:itext('/RSA_v1.1/image_mon_loc:label')"/>
+    </upload>
+    <upload mediatype="image/*" ref="/RSA_v1.1/image_mon_loc2">
+      <label ref="jr:itext('/RSA_v1.1/image_mon_loc2:label')"/>
+    </upload>
+    <input ref="/RSA_v1.1/comments">
+      <label ref="jr:itext('/RSA_v1.1/comments:label')"/>
+    </input>
+  </h:body>
+</h:html>

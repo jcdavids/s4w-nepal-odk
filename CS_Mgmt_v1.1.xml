@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CS Management (v1.1)</h:title>
+    <model>
+      <itext>
+        <translation lang="English">
+          <text id="/CS_Mgmt_v1.1/cs_number:label">
+            <value>Enter mobile number of CS:</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/water_flow:label">
+            <value>Water Flow</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_name:label">
+            <value>Enter name of CS:</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_followup_image2:label">
+            <value>Take secondary picture of CS visit (optional):</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_experience:label">
+            <value>What is the CS enjoying about the project (e.g. learning about rain, science, new friends, etc.)?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_met/no:label">
+            <value>No</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/msmt_datetime:label">
+            <value>Enter date and time of CS visit:</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/comments:label">
+            <value>Enter general notes or comments about CS visit (optional):</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_type/idle:label">
+            <value>Idle - measurement(s) taken in the last month.</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/precip:label">
+            <value>Precipitation (Rainfall)</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/wthr:label">
+            <value>Weather</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/esha:label">
+            <value>Stream ESHA</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_type:label">
+            <value>How would you currently classify the CS (answer can change over time)?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/volunteer_paid/volunteer:label">
+            <value>Volunteer</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/volunteer_paid:label">
+            <value>Is the CS volunteer or paid?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/existing_new:label">
+            <value>Is the visit with a new or existing CS?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/gw_level:label">
+            <value>Groundwater Level (Well)</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_type/inactive:label">
+            <value>Inactive - no measurement(s) taken in last month.</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/data_wifi/wifi:label">
+            <value>WIFI</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/salt_flow:label">
+            <value>Salt Dilution Streamflow</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_met/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/mon_id:label">
+            <value>Enter monitor ID (monID) of CS (in Google Maps):</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_problems:label">
+            <value>What problems is the CS having (e.g. gauge is broken, ODK trouble, etc.)?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/data_wifi:label">
+            <value>Does the CS have a dataplan or WIFI?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/water_level:label">
+            <value>Water Level</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_type/regular:label">
+            <value>Regular - measurement(s) taken in the last week and over 40% measurements for the last month.</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_email:label">
+            <value>Enter email of CS:</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/planned_visit:label">
+            <value>Was the CS visit scheduled ahead of time?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_followup_image1:label">
+            <value>Take picture of CS visit (optional):</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_motivation:label">
+            <value>What is motivating the CS to continue participating in the project (e.g. fun, payment, certificate, interesting, etc.)?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/volunteer_paid/paid:label">
+            <value>Paid</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_payment:label">
+            <value>Enter amount (NPR) of CS cash payment made during visit (enter 0 if no payment was made):</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/existing_new/new:label">
+            <value>New</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/existing_new/existing:label">
+            <value>Existing</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/wq:label">
+            <value>Water Quality</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters:label">
+            <value>What parameters will the CS be measuring?</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/planned_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/planned_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/parameters/stonespout:label">
+            <value>Stone Spout</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/geopoint:label">
+            <value>Record location of CS visit:</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_type/occasional:label">
+            <value>Occasional - measurement(s) taken in the last week and less than 40% measurements for the last month.</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_suggestions:label">
+            <value>What suggestions does the CS have for improving the project (e.g. more follow-up, events, training, etc.)</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/data_wifi/dataplan:label">
+            <value>Dataplan</value>
+          </text>
+          <text id="/CS_Mgmt_v1.1/cs_met:label">
+            <value>Did you meet the CS in person?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <CS_Mgmt_v1.1 id="cs_mgmt_v1.1">
+          <msmt_datetime/>
+          <geopoint/>
+          <cs_name/>
+          <existing_new/>
+          <cs_number/>
+          <cs_email/>
+          <volunteer_paid/>
+          <data_wifi/>
+          <parameters/>
+          <mon_id/>
+          <planned_visit/>
+          <cs_met/>
+          <cs_payment/>
+          <cs_experience/>
+          <cs_problems/>
+          <cs_motivation/>
+          <cs_suggestions/>
+          <cs_type/>
+          <comments/>
+          <cs_followup_image1/>
+          <cs_followup_image2/>
+          <start/>
+          <end/>
+          <today/>
+          <deviceid/>
+          <simserial/>
+          <phonenumber/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </CS_Mgmt_v1.1>
+      </instance>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/CS_Mgmt_v1.1/msmt_datetime" required="true()" type="dateTime"/>
+      <bind nodeset="/CS_Mgmt_v1.1/geopoint" required="true()" type="geopoint"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_name" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/existing_new" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/CS_Mgmt_v1.1/cs_number" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'new')" required="true()" type="decimal"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_email" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'new')" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/volunteer_paid" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'new')" required="true()" type="select1"/>
+      <bind nodeset="/CS_Mgmt_v1.1/data_wifi" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'new')" required="true()" type="select1"/>
+      <bind nodeset="/CS_Mgmt_v1.1/parameters" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'new')" required="true()" type="select"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/CS_Mgmt_v1.1/mon_id" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="int"/>
+      <bind nodeset="/CS_Mgmt_v1.1/planned_visit" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="select1"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_met" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="Entry must be greater than or equal to 0!" nodeset="/CS_Mgmt_v1.1/cs_payment" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="int"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_experience" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_problems" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_motivation" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_suggestions" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_type" relevant="selected( /CS_Mgmt_v1.1/existing_new , 'existing')" required="true()" type="select1"/>
+      <bind nodeset="/CS_Mgmt_v1.1/comments" type="string"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_followup_image1" type="binary"/>
+      <bind nodeset="/CS_Mgmt_v1.1/cs_followup_image2" type="binary"/>
+      <bind jr:preload="timestamp" jr:preloadParams="start" nodeset="/CS_Mgmt_v1.1/start" type="dateTime"/>
+      <bind jr:preload="timestamp" jr:preloadParams="end" nodeset="/CS_Mgmt_v1.1/end" type="dateTime"/>
+      <bind jr:preload="date" jr:preloadParams="today" nodeset="/CS_Mgmt_v1.1/today" type="date"/>
+      <bind jr:preload="property" jr:preloadParams="deviceid" nodeset="/CS_Mgmt_v1.1/deviceid" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="simserial" nodeset="/CS_Mgmt_v1.1/simserial" type="string"/>
+      <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/CS_Mgmt_v1.1/phonenumber" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/CS_Mgmt_v1.1/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/CS_Mgmt_v1.1/msmt_datetime">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/msmt_datetime:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/geopoint">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/geopoint:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_name">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_name:label')"/>
+    </input>
+    <select1 ref="/CS_Mgmt_v1.1/existing_new">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/existing_new:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/existing_new/existing:label')"/>
+        <value>existing</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/existing_new/new:label')"/>
+        <value>new</value>
+      </item>
+    </select1>
+    <input ref="/CS_Mgmt_v1.1/cs_number">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_number:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_email">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_email:label')"/>
+    </input>
+    <select1 ref="/CS_Mgmt_v1.1/volunteer_paid">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/volunteer_paid:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/volunteer_paid/volunteer:label')"/>
+        <value>volunteer</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/volunteer_paid/paid:label')"/>
+        <value>paid</value>
+      </item>
+    </select1>
+    <select1 ref="/CS_Mgmt_v1.1/data_wifi">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/data_wifi:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/data_wifi/dataplan:label')"/>
+        <value>dataplan</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/data_wifi/wifi:label')"/>
+        <value>wifi</value>
+      </item>
+    </select1>
+    <select ref="/CS_Mgmt_v1.1/parameters">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/parameters:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/precip:label')"/>
+        <value>precip</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/gw_level:label')"/>
+        <value>gw_level</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/water_level:label')"/>
+        <value>water_level</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/water_flow:label')"/>
+        <value>water_flow</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/wthr:label')"/>
+        <value>wthr</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/wq:label')"/>
+        <value>wq</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/stonespout:label')"/>
+        <value>stonespout</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/salt_flow:label')"/>
+        <value>salt_flow</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/parameters/esha:label')"/>
+        <value>esha</value>
+      </item>
+    </select>
+    <input ref="/CS_Mgmt_v1.1/mon_id">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/mon_id:label')"/>
+    </input>
+    <select1 ref="/CS_Mgmt_v1.1/planned_visit">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/planned_visit:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/planned_visit/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/planned_visit/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/CS_Mgmt_v1.1/cs_met">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_met:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_met/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_met/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/CS_Mgmt_v1.1/cs_payment">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_payment:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_experience">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_experience:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_problems">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_problems:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_motivation">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_motivation:label')"/>
+    </input>
+    <input ref="/CS_Mgmt_v1.1/cs_suggestions">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_suggestions:label')"/>
+    </input>
+    <select1 ref="/CS_Mgmt_v1.1/cs_type">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_type:label')"/>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_type/regular:label')"/>
+        <value>regular</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_type/occasional:label')"/>
+        <value>occasional</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_type/idle:label')"/>
+        <value>idle</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/CS_Mgmt_v1.1/cs_type/inactive:label')"/>
+        <value>inactive</value>
+      </item>
+    </select1>
+    <input ref="/CS_Mgmt_v1.1/comments">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/comments:label')"/>
+    </input>
+    <upload mediatype="image/*" ref="/CS_Mgmt_v1.1/cs_followup_image1">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_followup_image1:label')"/>
+    </upload>
+    <upload mediatype="image/*" ref="/CS_Mgmt_v1.1/cs_followup_image2">
+      <label ref="jr:itext('/CS_Mgmt_v1.1/cs_followup_image2:label')"/>
+    </upload>
+  </h:body>
+</h:html>
